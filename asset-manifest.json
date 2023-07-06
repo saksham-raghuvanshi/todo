@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/saksham-raghuvanshi.github.io/todo/static/css/main.4d3c76b3.css",
+    "main.js": "/saksham-raghuvanshi.github.io/todo/static/js/main.74903bca.js",
+    "index.html": "/saksham-raghuvanshi.github.io/todo/index.html",
+    "main.4d3c76b3.css.map": "/saksham-raghuvanshi.github.io/todo/static/css/main.4d3c76b3.css.map",
+    "main.74903bca.js.map": "/saksham-raghuvanshi.github.io/todo/static/js/main.74903bca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d3c76b3.css",
+    "static/js/main.74903bca.js"
+  ]
+}
