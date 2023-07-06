@@ -1,9 +1,17 @@
-import "./App.css";
+import AddTask from "./components/AddTask";
+import Header from "./components/Header";
+import ShowTask from "./components/ShowTask";
 
+import "./App.css";
+import "./style/addtask.css";
 function App() {
   return (
     <div className="App">
-      <header>Todo Frontendgyaan</header>
+      <div className="container">
+        <Header />
+        <AddTask />
+        <ShowTask />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,43 @@
+.addTask{
+
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow);
+    max-width: 500px;
+    margin: 20px auto;
+
+  }
+  
+  .addTask form{
+    display: flex;
+    gap: 7px;
+   
+  }
+
+ .addTask form input{
+    flex-grow:1 ;
+    border-radius: 5px;
+    font-size: 18px;
+    border:1px solid #aeaeae ;
+    padding: 5px 5px;
+    
+  }
+   .addTask form input:focus{
+    outline: 0.5px solid #eaeaea;
+  }
+
+  .addTask form button{
+    background-color: #03ba5c;
+    color: #ffffff;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+ .addTask form button:hover{
+    background-color: #03b056;
+  }
+ 
