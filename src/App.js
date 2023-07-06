@@ -4,6 +4,7 @@ import ShowTask from "./components/ShowTask";
 
 import "./App.css";
 import "./style/addtask.css";
+import "./style/showTask.css";
 function App() {
   return (
     <div className="App">
