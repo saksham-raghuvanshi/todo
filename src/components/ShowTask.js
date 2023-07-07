@@ -48,7 +48,7 @@ const ShowTask = ({ taskList, setTaskList, task, setTask }) => {
 
       <ul>
         {taskList.map((todo) => (
-          <li>
+          <li key={task.id}>
             <p>
               <span>{todo.name}</span>
               <span>{todo.time}</span>

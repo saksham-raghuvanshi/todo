@@ -41,3 +41,25 @@
     background-color: #03b056;
   }
  
+  @media only screen and (max-width: 350px) {
+
+    .addTask{
+
+      padding: 20px 15px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: var(--box-shadow);
+      max-width: 300px;
+      margin: 20px auto;
+  
+    }
+    .addTask form input{
+      flex-grow:1 ;
+      font-size: small;
+
+    }
+
+    .addTask form button{
+      font-size: small;
+    }
+  }
