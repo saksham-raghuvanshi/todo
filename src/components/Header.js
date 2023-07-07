@@ -5,6 +5,7 @@ const Header = () => {
     JSON.parse(localStorage.getItem("theme")) || "medium"
   );
   //we add it html in index.html page <html class="light"></html>
+  // theme store in localStorage
 
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(theme));
