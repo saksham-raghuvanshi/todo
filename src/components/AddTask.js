@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddTask = ({ taskList, setTaskList }) => {
+const AddTask = ({ taskList, setTaskList, task, setTask }) => {
   const handlesubmit = (ev) => {
     ev.preventDefault();
     const date = new Date();
