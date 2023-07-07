@@ -41,58 +41,21 @@
     background-color: #03b056;
   }
  
-  @media only screen and (max-width: 350px) {
-
-    .addTask{
-
-      padding: 20px 15px;
-      border-radius: 5px;
-      background-color: #ffffff;
-      box-shadow: var(--box-shadow);
-      max-width: 300px;
-      margin: 20px auto;
+  @media (max-width: 400px) {
+    .addTask {
+      padding: 15px;
+      max-width: 100%;
+      margin: 10px auto;
+    }
   
+    .addTask form {
+      flex-direction: column;
+      gap: 10px;
     }
-    .addTask form input{
-      
-      font-size: small;
-      margin: 2px;
-
-    }
-
-    .addTask form button{
-      font-size: small;
-      margin: 2px;
-    }
-  }
-
-  @media only screen and (max-width: 250px){
-    
-    .addTask form input{
-      
-      font-size: x-small;
-      margin: 2px;
-
-    }
-
-    .addTask form button{
-      font-size:x-small;
-      margin: 2px;
-    }
-  }
-
-
-  @media only screen and (max-width: 208px){
-    
-    .addTask form input{
-      
-      font-size: xx-small;
-      margin: 2px;
-
-    }
-
-    .addTask form button{
-      font-size:xx-small;
-      margin: 2px;
+  
+    .addTask form input,
+    .addTask form button {
+      padding: 10px;
+      font-size: 16px;
     }
   }
