@@ -16,6 +16,7 @@ const AddTask = ({ taskList, setTaskList, task, setTask }) => {
       );
 
       setTaskList(updateTask);
+      setTask({});
     } else {
       const date = new Date();
       const newTask = {
@@ -25,7 +26,7 @@ const AddTask = ({ taskList, setTaskList, task, setTask }) => {
       };
 
       setTaskList([...taskList, newTask]);
-      ev.target.task.value = "";
+      setTask({});
     }
   };
   return (
@@ -33,7 +34,7 @@ const AddTask = ({ taskList, setTaskList, task, setTask }) => {
       <div className="addTask">
         <form onSubmit={handlesubmit}>
           <input
-            value={task.name}
+            value={task.name || ""}
             type="text"
             name="task"
             autoComplete="off"
