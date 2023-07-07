@@ -42,7 +42,7 @@ const AddTask = ({ taskList, setTaskList, task, setTask }) => {
             maxLength="25"
             onChange={(e) => setTask({ ...task, name: e.target.value })}
           />
-          <button type="submit">Add Task</button>
+          <button type="submit">{task.id ? "Update" : "Add"}</button>
         </form>
       </div>
     </section>
