@@ -5,17 +5,17 @@ import ShowTask from "./components/ShowTask";
 import "./App.css";
 import "./style/addtask.css";
 import "./style/showTask.css";
-import { HashRouter } from "react-router-dom";
+import { useState } from "react";
+
 function App() {
+  const [taskList, setTaskList] = useState([]);
   return (
     <div className="App">
-      <HashRouter>
-        <div className="container">
-          <Header />
-          <AddTask />
-          <ShowTask />
-        </div>
-      </HashRouter>
+      <div className="container">
+        <Header />
+        <AddTask taskList={taskList} setTaskList={setTaskList} />
+        <ShowTask taskList={taskList} setTaskList={setTaskList} />
+      </div>
     </div>
   );
 }

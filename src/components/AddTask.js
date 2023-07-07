@@ -1,10 +1,22 @@
 import React from "react";
 
-const AddTask = () => {
+const AddTask = ({ taskList, setTaskList }) => {
+  const handlesubmit = (ev) => {
+    ev.preventDefault();
+    const date = new Date();
+    const newTask = {
+      id: date.getTime(),
+      name: ev.target.task.value,
+      time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`,
+    };
+
+    setTaskList([...taskList, newTask]);
+    ev.target.task.value = "";
+  };
   return (
     <section>
       <div className="addTask">
-        <form>
+        <form onSubmit={handlesubmit}>
           <input
             type="text"
             name="task"
